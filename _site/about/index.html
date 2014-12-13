@@ -6,12 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }} - {{ site.description }}</title>
-        <meta name="author" content="{{ site.name }}" />
-        <meta name="description" content="{{ site.description }}" />
+        <title>Bodi - Frontend Developer with a focus on web animations</title>
+        <meta name="author" content="Bodi" />
+        <meta name="description" content="Frontend Developer with a focus on web animations" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+        <link rel="stylesheet" href="/style.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
@@ -23,34 +23,43 @@
         <div class="wrapper-masthead">
             <div class="container">
                 <header class="masthead clearfix">
-                    <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+                    <a href="/" class="site-avatar"><img src="" /></a>
 
                     <div class="site-info">
-                        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                        <p class="site-description">{{ site.description }}</p>
+                        <h1 class="site-name"><a href="/">Bodi</a></h1>
+                        <p class="site-description">Frontend Developer with a focus on web animations</p>
                     </div>
 
                     <nav>
-                        <a href="{{ site.baseurl }}/">Blog</a>
-                        <a href="{{ site.baseurl }}/about">About</a>
+                        <a href="/">Blog</a>
+                        <a href="/about">About</a>
                     </nav>
                 </header>
             </div><!-- end container -->
         </div><!-- end wrapper-masthead -->
 
         <div id="main" role="main" class="container">
-            {{ content }}
+            <p>This is the about page.</p>
+
         </div><!-- end #main .container <--></-->
 
         <div class="wrapper-footer">
             <div class="container">
                 <footer class="footer">
-                    {% include svg-icons.html %}
+                    
                 </footer>
             </div><!-- end container -->
         </div><!-- end wrapper-footer -->
 
-        {% include analytics.html %}
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
