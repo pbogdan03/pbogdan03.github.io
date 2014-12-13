@@ -1,0 +1,31 @@
+# Name of the site (displayed in the header)
+name: Bodi
+
+# Short bio or description (displayed in the header)
+description: Frontend Developer with a focus on web animations
+
+# Includes an icon in the footer for each user name you enter
+fotter-links:
+  github: pbogdan03
+  twitter: 
+
+#
+# Standard configuration variables
+# 
+
+markdown: kramdown
+highlighter: pygments
+permalink: /:title/
+
+# Set the Sass partials directory
+sass: 
+  sass_dir: _sass
+  style: :expanded # or compressed for minified
+
+# Plugins
+gems: 
+  - jekyll-sitemap 
+
+# Exclude these files from production
+exclude:
+  - README.md
