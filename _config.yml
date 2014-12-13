@@ -12,3 +12,6 @@ defaults:
     values: 
       layout: "project" #overrides previous default layout
       author: "Mr. Hyde"
+
+sass:
+    sass_dir: _sass
