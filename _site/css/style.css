@@ -301,7 +301,11 @@ a:hover {
  * Media
  * -----------------------------------------------------------------------------
  */
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 20em) {
+  .main-content {
+    max-width: 100%;
+  }
+
   p {
     font-size: 1.125em;
     /* 16px */
@@ -310,11 +314,12 @@ a:hover {
     /* = line-height */
   }
 
-  article {
+  .post {
     max-width: 33em;
+    padding: 30px 15px;
   }
 }
-/* 600px */
+/* 320px */
 @media only screen and (min-width: 50em) {
   p {
     font-size: 1.125rem;
@@ -338,7 +343,11 @@ a:hover {
     /* = line-height */
   }
 
-  article {
+  .main-content {
+    max-width: 52em;
+  }
+
+  .post {
     max-width: 52em;
   }
 }
