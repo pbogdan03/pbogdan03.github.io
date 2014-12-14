@@ -161,9 +161,13 @@ article {
   a {
     margin-left: 20px;
     font-size: 3em;
-  }
-  a:hover {
-    color: #777;
+
+    &:hover {
+      color: #777;
+    }
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
