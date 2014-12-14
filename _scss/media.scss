@@ -1,0 +1,41 @@
+
+/**
+ * -----------------------------------------------------------------------------
+ * Media
+ * -----------------------------------------------------------------------------
+ */
+
+@media only screen and (min-width: 37.5em) {
+  p {
+    font-size: 1.125em; /* 16px */
+    line-height: 1.4;
+    margin-bottom: 1.4em; /* = line-height */
+  }
+  article {
+    max-width: 33em;
+  }
+}/* 600px */
+
+@media only screen and (min-width: 50em) {
+  p {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.45;
+    margin-bottom: 1.45em; /* = line-height */
+  }
+  .posts {
+    padding: 0;
+  }
+
+}/* 800px */
+
+@media only screen and (min-width: 62.5em) {
+  p {
+    font-size: 1.312rem; /* 21px */
+    line-height: 1.5;
+    margin-bottom: 1.5em; /* = line-height */
+  }
+  article {
+    max-width: 52em;
+  }
+
+}/* 1000px */

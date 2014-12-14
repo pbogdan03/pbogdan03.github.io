@@ -1,13 +1,14 @@
 # Name of the site (displayed in the header)
-name: Bodi
+name: Wanimating
 
 # Short bio or description (displayed in the header)
-description: Frontend Developer with a focus on web animations
+description: Web animations - HTML5, CSS3, Javascript
 
 # Includes an icon in the footer for each user name you enter
-fotter-links:
+footer-links:
   github: pbogdan03
-  twitter: 
+  twitter: pbogdan03
+  email: p_bogdan03@yahoo.com
 
 #
 # Standard configuration variables
@@ -19,7 +20,7 @@ permalink: /:title/
 
 # Set the Sass partials directory
 sass: 
-  sass_dir: _sass
+  sass_dir: _scss
   style: :expanded # or compressed for minified
 
 # Plugins
