@@ -29,7 +29,7 @@
 
                     <div class="site-info">
                         <h2 class="site-name"><a href="/">Wanimating</a></h2>
-                        <p class="site-description">Web animations - HTML5, CSS3, Javascript</p>
+                        <span class="site-description">Web animations - HTML5, CSS3, Javascript</span>
                     </div>
 
                     <nav>
@@ -40,23 +40,19 @@
             </div><!-- end container -->
         </div><!-- end wrapper-masthead -->
 
-        <div id="main" role="main" class="container">
-            <div class="main-content">
-</div>
-
-            <div class="posts">
+      <div id="main" role="main" class="container">
+        <div class="posts">
               
-                <article>
-                  <h2 class="post-title"><a href="/First-Post/">First Post</a></h2>
-                  <p>This is my first post using Jekyll and Github Pages. It should be 70 characters long.</p>
-
-
+                <article class="post">
+                  <head class="post-header">
+                    <meta name="description" content="This is my first post using Jekyll and Github Pages. It should be 70 characters long." />
+                  </head>
+                  <h3 class="post-title"><a href="/First-Post/">First Post</a></h3>
+                  <div class="entry"><p>This is my first post using Jekyll and Github Pages. It should be 70 characters long.[...]</p></div>
                 </article>
               
-            </div><!-- end .posts -->
-
-        </div><!-- end #main .container -->
-
+        </div><!-- end .posts -->
+      </div><!-- end #main .container -->
         <div class="wrapper-footer">
             <div class="container">
                 <footer class="footer">
@@ -84,4 +80,3 @@
 
      </body>
 </html>       
-

@@ -1,17 +1,15 @@
 {% include header.html %}
-        <div id="main" role="main" class="container">
-            <div class="main-content">{{ content }}</div>
-
-            <div class="posts">
+      <div id="main" role="main" class="container">
+        <div class="posts">
               {% for post in site.posts %}
-                <article>
-                  <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-                  {{ post.excerpt }}
+                <article class="post">
+                  <head class="post-header">
+                    <meta name="description" content="{{ post.excerpt | strip_html }}" />
+                  </head>
+                  <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                  <div class="entry"><p>{{ post.excerpt }}[...]</p></div>
                 </article>
               {% endfor %}
-            </div><!-- end .posts -->
-
-        </div><!-- end #main .container -->
-
+        </div><!-- end .posts -->
+      </div><!-- end #main .container -->
 {% include footer.html %}
-

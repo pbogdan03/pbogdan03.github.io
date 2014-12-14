@@ -67,17 +67,6 @@ table {
  * Custom CSS
  * -----------------------------------------------------------------------------
  */
-/* Set horizontal lines for rhytm, uncomment for production */
-html {
-  background-image: -webkit-linear-gradient(top, #fff 0, #fff 95%, #f00 95%, #f00 100%);
-  background-image: -moz-linear-gradient(top, #fff 0, #fff 95%, #f00 95%, #f00 100%);
-  background-image: linear-gradient(top, #fff 0, #fff 95%, #f00 95%, #f00 100%);
-  background-repeat: repeat-y;
-  background-size: 100% 1.5em;
-  /* Background size height equals rendered line height at the respective
-  breakpoint */
-}
-
 .wrapper-masthead {
   width: 100%;
 }
@@ -90,8 +79,13 @@ html {
 .masthead nav {
   text-align: center;
   font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
+  height: 2em;
+  padding: 10px;
 }
 .masthead nav a {
+  height: 20px;
+  width: 100%;
+  box-sizing: border-box;
   border: solid 1px #333;
   padding: .5em 1em;
   text-decoration: none;
@@ -105,8 +99,17 @@ html {
   background-color: #333;
 }
 
+nav:after {
+  content: "";
+  display: block;
+  margin: 20px auto 0 auto;
+  width: 143px;
+  border-bottom: dashed 4px #333;
+}
+
 .site-info {
   text-align: center;
+  margin-bottom: 1.3em;
 }
 
 .site-description {
@@ -152,6 +155,15 @@ article {
 
 .posts {
   padding: 0 10px;
+}
+
+.post {
+  padding: 30px 0;
+  border-bottom: dashed 1px #333;
+}
+
+.main-content {
+  border-bottom: dashed 1px #333;
 }
 
 /**
@@ -218,6 +230,10 @@ h6 {
   font-family: "Open Sans", Helvetica, Verdana, Arial, sans-serif;
 }
 
+h3 {
+  font-weight: 600;
+}
+
 /* Set the width of an article so that it will be ~66 characters long */
 article {
   max-width: 52em;
@@ -250,16 +266,29 @@ a:hover {
   color: #333;
 }
 
-.site-name a {
-  text-decoration: none;
-}
-
 .post-title a {
+  font-weight: 600;
   text-decoration: none;
 }
 
 .site-name a {
+  text-decoration: none;
+  font-weight: 600;
   color: #333;
+  text-shadow: 2px 2px #fff, 3px 3px rgba(0, 0, 0, 0.5);
+  transition: color .5s;
+}
+.site-name a:hover {
+  color: #955251;
+}
+
+.date {
+  font-style: italic;
+  color: #777;
+}
+
+.site-description {
+  font-size: 1.125em;
 }
 
 /**
