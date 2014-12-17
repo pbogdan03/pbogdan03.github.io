@@ -1,0 +1,103 @@
+<style>
+.example-wrapper {
+  height: 180px;
+}
+.box {
+  float:left;
+  width: 120px;
+  height: 180px;
+  position:relative;
+}
+.faces {
+  cursor: pointer;
+  margin-top: 80px;
+  position:absolute;
+  width: 60px;
+  height: 60px;
+  --webkit-transition: background-color .5s;
+  -o-transition: background-color .5s;
+  transition: background-color .5s;
+}
+.faces.right-side {
+  background-color: #999;
+}
+.faces.right-side:hover {
+  background-color: #955251;
+}
+.faces.front-side {
+  background-color: #ccc;
+}
+.faces.front-side:hover {
+  background-color: #955251;
+}
+.faces.top-side {
+  background-color: #eee;
+}
+.faces.top-side:hover {
+  background-color: #955251;
+}
+.right-side.deg45{
+  left: 60px;
+  --webkit-transform: skewY(-45deg);
+  -ms-transform: skewY(-45deg);
+  -o-transform: skewY(-45deg);
+  transform: skewY(-45deg);
+}
+.front-side.deg45 {
+  --webkit-transform: skewY(45deg);
+  -ms-transform: skewY(45deg);
+  -o-transform: skewY(45deg);
+  transform: skewY(45deg);
+}
+.top-side.deg45 {
+  top: -60px;
+  left: 29px;
+  --webkit-transform: skew(45deg,-45deg);
+  -ms-transform: skew(45deg,-45deg);
+  -o-transform: skew(45deg,-45deg);
+  transform: skew(45deg,-45deg);
+}
+.right-side.deg60 {
+  left: 60px;
+  --webkit-transform: skewY(-30deg);
+  -ms-transform: skewY(-30deg);
+  -o-transform: skewY(-30deg);
+  transform: skewY(-30deg);
+}
+.front-side.deg60 {
+  --webkit-transform: skewY(30deg);
+  -ms-transform: skewY(30deg);
+  -o-transform: skewY(30deg);
+  transform: skewY(30deg);
+}
+.top-side.deg60 {
+  height: 35px;
+  top: -35px;
+  left: 29px;
+  --webkit-transform: skew(60deg,-30deg);
+  -ms-transform: skew(60deg,-30deg);
+  -o-transform: skew(60deg,-30deg);
+  transform: skew(60deg,-30deg);
+}
+
+</style>
+
+<div class="example-wrapper">
+  <div class="box">
+    <div class="faces right-side deg45"></div>
+    <div class="faces front-side deg45"></div>
+    <div class="faces top-side deg45"></div>
+  </div>
+
+  <span style="display: inline-block; margin: 60px 0 0 50px; font-style: italic; "> 45 degrees </span>
+</div>
+
+<div class="example-wrapper">
+  <div class="box">
+    <div class="faces right-side deg60"></div>
+    <div class="faces front-side deg60"></div>
+    <div class="faces top-side deg60"></div>
+  </div>
+
+  <span style="display: inline-block; margin: 65px 0 0 50px; font-style: italic; "> 60 degrees </span>
+</div>

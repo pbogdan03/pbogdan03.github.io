@@ -2,7 +2,7 @@
 layout: post
 title: First Post
 author: Bogdan
-excerpt: This is my first post using Jekyll and Github Pages. It should be 70 characters long.
+excerpt: This is my first post using Jekyll and Github Pages. Nothing new here.
 ---
 
 This is my first post using Jekyll and Github Pages. It is more of an experimental page
