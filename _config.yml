@@ -17,8 +17,8 @@ disqus: wantimator
 # Standard configuration variables
 # 
 
-markdown: kramdown
-highlighter: rouge
+markdown: redcarpet
+highlighter: pygments
 permalink: /:title/
 
 # Set the Sass partials directory
