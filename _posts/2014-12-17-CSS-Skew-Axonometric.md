@@ -22,7 +22,7 @@ pixel by pixel until it all snaps together...so, it takes some time but you'll g
 
 This is the code for the 45 degrees axonometric box:
 
-{% highlight css %}
+{% highlight css %}{% raw %}
 .right-side.deg45 {
     -webkit-transform: skewY(-45deg);
     -ms-transform: skewY(-45deg);
@@ -41,7 +41,7 @@ This is the code for the 45 degrees axonometric box:
     -o-transform: skew(45deg,-45deg);
     transform: skew(45deg,-45deg);
 }
-{% endhighlight %}
+{% endraw %}{% endhighlight %}
 
 You can add any actions on the elements, so you can target them with CSS hover or
 Javascript.
