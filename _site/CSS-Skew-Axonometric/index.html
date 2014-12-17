@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/syntax.css">
         <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -168,24 +169,24 @@ pixel by pixel until it all snaps together…so, it takes some time but you’ll
 
 <p>This is the code for the 45 degrees axonometric box:</p>
 
-<p>.right-side.deg45 {
-  –webkit-transform: skewY(-45deg);
-  -ms-transform: skewY(-45deg);
-  -o-transform: skewY(-45deg);
-  transform: skewY(-45deg);
-}
-.front-side.deg45 {
-  –webkit-transform: skewY(45deg);
-  -ms-transform: skewY(45deg);
-  -o-transform: skewY(45deg);
-  transform: skewY(45deg);
-}
-.top-side.deg45 {
-  –webkit-transform: skew(45deg,-45deg);
-  -ms-transform: skew(45deg,-45deg);
-  -o-transform: skew(45deg,-45deg);
-  transform: skew(45deg,-45deg);
-}</p>
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.right-side.deg45</span> <span class="p">{</span>
+    <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
+    <span class="nl">-ms-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
+    <span class="nl">-o-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.front-side.deg45</span> <span class="p">{</span>
+    <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
+    <span class="nl">-ms-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
+    <span class="nl">-o-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nc">.top-side.deg45</span> <span class="p">{</span>
+    <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>
+    <span class="nl">-ms-transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>
+    <span class="nl">-o-transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>
+    <span class="nl">transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
 
 <p>You can add any actions on the elements, so you can target them with CSS hover or
 Javascript.</p>

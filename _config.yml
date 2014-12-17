@@ -18,7 +18,7 @@ disqus: wantimator
 # 
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 
 # Set the Sass partials directory
@@ -31,5 +31,5 @@ sass:
 #   - jekyll-sitemap 
 
 # Exclude these files from production
-exclude:
+exclude: 
   - README.md
