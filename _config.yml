@@ -17,7 +17,7 @@ disqus: wantimator
 # Standard configuration variables
 # 
 
-markdown: kramdown
+markdown: redcarpet
 highlighter: rouge
 permalink: /:title/
 
