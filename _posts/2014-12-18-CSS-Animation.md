@@ -66,8 +66,8 @@ The code is a bit cumbersome but it works:
 }
 {% endhighlight %}
 
-Next an image slider with some effects on the pictures, not to shabby, if I may say 
-so myself:
+<p>Next an image slider with some effects on the pictures, not to shabby, if I may say 
+so myself:</p>
 
 {% include jumbotron.html %}
 
