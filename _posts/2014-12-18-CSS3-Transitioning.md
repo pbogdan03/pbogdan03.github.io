@@ -2,7 +2,9 @@
 layout: post
 title: CSS3 Transitioning
 author: Bogdan
-excerpt: So yeah, skewing is a bit useless in my opinion, except....
+excerpt: CSS3 transition property gets an element from one point to another, so if you 
+need to make something appear, change colors, dimensions etc, it's great. And simple
+to use as you'll see next.
 ---
 
 CSS3 transition property gets an element from one point to another, so if you 
