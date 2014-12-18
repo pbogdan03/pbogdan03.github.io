@@ -18,7 +18,7 @@ disqus: wantimator
 # 
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 
 # Set the Sass partials directory

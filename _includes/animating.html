@@ -1,0 +1,68 @@
+<style type="text/css">
+@keyframes skewing {
+  10% {--webkit-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);}
+  20% {--webkit-transform: skewX(50deg);
+  -ms-transform: skewX(50deg);
+  -o-transform: skewX(50deg);
+  transform: skewX(50deg);}
+  60% {--webkit-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);}
+  80% {--webkit-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  transform: skewX(-10deg);}
+  90% {--webkit-transform: skewX(5deg);
+  -ms-transform: skewX(5deg);
+  -o-transform: skewX(5deg);
+  transform: skewX(5deg);}
+  100% {--webkit-transform: skewX(0deg);
+  -ms-transform: skewX(0deg);
+  -o-transform: skewX(0deg);
+  transform: skewX(0deg);}
+}
+@keyframes sliding {
+  10% {--webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);}
+  90% {--webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  -o-transform: translateX(300px);
+  transform: translateX(300px);}
+  100% {--webkit-transform: translateX(300px);
+  -ms-transform: translateX(300px);
+  -o-transform: translateX(300px);
+  transform: translateX(300px);}
+}
+.animation-wrapper {
+  height: 160px;
+  position: relative;
+  margin-bottom: 25px;
+  padding: 20px;
+}
+.skewed-animation {
+  height: 100px;
+  width: 40px;
+  --webkit-animation: skewing 2s infinite;
+  -o-animation: skewing 2s infinite;
+  animation: skewing 2s infinite;
+}
+.animated {
+  position: absolute;
+  height: 100px;
+  width: 40px;
+  left: 40px;
+  background-color: #03ED67;
+  --webkit-animation: sliding 2s infinite;
+  -o-animation: sliding 2s infinite;
+  animation: sliding 2s infinite;
+}
+</style>
+<div class="animation-wrapper">
+  <div class="skewed-animation"><div class="animated"></div></div>
+</div>
