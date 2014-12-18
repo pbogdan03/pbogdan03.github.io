@@ -175,8 +175,80 @@ with warping that I know of, so that the result would be more interesting.</p>
     <span class="nl">transform</span><span class="p">:</span> <span class="n">translateX</span><span class="p">(</span><span class="m">300px</span><span class="p">);}</span>
 <span class="p">}</span></code></pre></div>
 
-<p>Next an image slider with some effects on the pictures, not to shabby, if I may say 
-so myself:</p>
+
+Next an image slider with some effects on the pictures, not to shabby, if I may say 
+so myself:
+
+<style>
+
+  @keyframes jumbotron {
+    0% {background-position: 0px 0px, 54.50vw 0px, 109vw 0px, 153.5vw 0px;}
+    15% {background-position: 0px -100px, 54.5vw -100px, 109vw -100px, 153.5vw -100px;}
+    23% {background-position: -54.5vw -100px, 0px -100px, 54.5vw -100px, 109vw -100px;}
+    51% {background-position: -54.5vw 0px, 0px 0px, 54.5vw 0px, 109vw 0px;}
+    56% {background-position: -109vw 0px, -54.5vw 0px, 0px 0px, 54.5vw 0px;}
+    81% {background-position: -109vw -100px, -54.5vw -100px, 0px -100px, 54.5vw -100px;}
+    86% {background-position: -153.5vw -100px, -109vw -100px, -54.5vw -100px, 0px -100px;}
+    100% {background-position: -153.5vw 0px, -109vw 0px, -54.5vw 0px, 0px 0px;}
+  }
+  .jumbotron-container {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .img-overlay {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAD0lEQVQImWNgYGD4z4AMAA4EAQAvGW0PAAAAAElFTkSuQmCC) repeat;
+    height: 200px;
+    width: 54.5vw;
+    float: left;
+  }
+  .img-overlay span {
+    margin-left: 30px;
+    font-size: 20px;
+    color: #eee;
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: italic;
+  }
+  .img-overlay span:first-child {
+    display: block;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 90px;
+    font-weight: 800;
+    font-style: normal;
+  }
+  .images {
+    width: 54.5vw;
+    height: 200px;
+    background-color: #000;
+    background-image: url(../images/download.jpg), url(../images/photo-2.jpg), url(../images/photo-3.jpg), url(../images/download.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px, 54.5vw 0px, 109vw 0px, 153.5vw 0px;
+    background-size: 54.5vw;
+    animation: jumbotron 50s infinite;
+  }
+</style>
+<div class="jumbotron-container">
+  <figure class="img-overlay"><span>Gigantous Potato</span><span>Circa 1903</span></figure>
+  <figure class="images"></figure>
+</div>
+
+<p>It slides 3 images right to left and down to up on each image by using background positioning.
+There is another div with the dotted background overlayed on top of the animation and some 
+cool text, that&#39;s it, you&#39;ve got an awesome jumbotron like header to amaze your clients.</p>
+
+<p>Check out the CSS with the keyframes(i&#39;m using the new vw-viewport width as the dimension units
+to test the responsiveness, it doesn&#39;t work quite right yet, should&#39;ve used media queries):</p>
+
+<div class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@keyframes</span> <span class="n">jumbotron</span> <span class="p">{</span>
+    <span class="nt">0</span><span class="o">%</span> <span class="p">{</span><span class="nl">background-position</span><span class="p">:</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">,</span> <span class="m">54</span><span class="p">.</span><span class="n">50vw</span> <span class="m">0px</span><span class="p">,</span> <span class="n">109vw</span> <span class="m">0px</span><span class="p">,</span> <span class="m">153</span><span class="p">.</span><span class="n">5vw</span> <span class="m">0px</span><span class="p">;}</span>
+    <span class="nt">15</span><span class="o">%</span> <span class="p">{</span><span class="nl">background-position</span><span class="p">:</span> <span class="m">0px</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="n">109vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">153</span><span class="p">.</span><span class="n">5vw</span> <span class="m">-100px</span><span class="p">;}</span>
+    <span class="nt">23</span><span class="o">%</span> <span class="p">{</span><span class="nl">background-position</span><span class="p">:</span> <span class="m">-54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">0px</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="n">109vw</span> <span class="m">-100px</span><span class="p">;}</span>
+    <span class="nt">51</span><span class="o">%</span> <span class="p">{</span><span class="nl">background-position</span><span class="p">:</span> <span class="m">-54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">0px</span><span class="p">,</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">,</span> <span class="m">54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">0px</span><span class="p">,</span> <span class="n">109vw</span> <span class="m">0px</span><span class="p">;}</span>
+    <span class="nt">56</span><span class="o">%</span> <span class="p">{</span><span class="nl">background-position</span><span class="p">:</span> <span class="n">-109vw</span> <span class="m">0px</span><span class="p">,</span> <span class="m">-54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">0px</span><span class="p">,</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">,</span> <span class="m">54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">0px</span><span class="p">;}</span>
+    <span class="nt">81</span><span class="o">%</span> <span class="p">{</span><span class="nl">background-position</span><span class="p">:</span> <span class="n">-109vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">-54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">0px</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">-100px</span><span class="p">;}</span>
+    <span class="nt">86</span><span class="o">%</span> <span class="p">{</span><span class="nl">background-position</span><span class="p">:</span> <span class="m">-153</span><span class="p">.</span><span class="n">5vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="n">-109vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">-54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">-100px</span><span class="p">,</span> <span class="m">0px</span> <span class="m">-100px</span><span class="p">;}</span>
+    <span class="nt">100</span><span class="o">%</span> <span class="p">{</span><span class="nl">background-position</span><span class="p">:</span> <span class="m">-153</span><span class="p">.</span><span class="n">5vw</span> <span class="m">0px</span><span class="p">,</span> <span class="n">-109vw</span> <span class="m">0px</span><span class="p">,</span> <span class="m">-54</span><span class="p">.</span><span class="n">5vw</span> <span class="m">0px</span><span class="p">,</span> <span class="m">0px</span> <span class="m">0px</span><span class="p">;}</span>
+<span class="p">}</span></code></pre></div>
 
   </div>
 

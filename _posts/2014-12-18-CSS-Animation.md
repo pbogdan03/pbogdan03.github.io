@@ -68,3 +68,25 @@ The code is a bit cumbersome but it works:
 
 Next an image slider with some effects on the pictures, not to shabby, if I may say 
 so myself:
+
+{% include jumbotron.html %}
+
+It slides 3 images right to left and down to up on each image by using background positioning.
+There is another div with the dotted background overlayed on top of the animation and some 
+cool text, that's it, you've got an awesome jumbotron like header to amaze your clients.
+
+Check out the CSS with the keyframes(i'm using the new vw-viewport width as the dimension units
+to test the responsiveness, it doesn't work quite right yet, should've used media queries):
+
+{% highlight css %}
+@keyframes jumbotron {
+    0% {background-position: 0px 0px, 54.50vw 0px, 109vw 0px, 153.5vw 0px;}
+    15% {background-position: 0px -100px, 54.5vw -100px, 109vw -100px, 153.5vw -100px;}
+    23% {background-position: -54.5vw -100px, 0px -100px, 54.5vw -100px, 109vw -100px;}
+    51% {background-position: -54.5vw 0px, 0px 0px, 54.5vw 0px, 109vw 0px;}
+    56% {background-position: -109vw 0px, -54.5vw 0px, 0px 0px, 54.5vw 0px;}
+    81% {background-position: -109vw -100px, -54.5vw -100px, 0px -100px, 54.5vw -100px;}
+    86% {background-position: -153.5vw -100px, -109vw -100px, -54.5vw -100px, 0px -100px;}
+    100% {background-position: -153.5vw 0px, -109vw 0px, -54.5vw 0px, 0px 0px;}
+}
+{% endhighlight %}
