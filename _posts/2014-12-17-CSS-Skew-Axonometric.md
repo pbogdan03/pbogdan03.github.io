@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS3 Skew Transform - Making an Axonometric View
+title: CSS Skew Transform - Making an Axonometric View
 author: Bogdan
 excerpt: So yeah, skewing is a bit useless in my opinion, except....
 ---
