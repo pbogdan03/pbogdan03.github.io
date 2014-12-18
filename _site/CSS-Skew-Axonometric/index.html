@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>CSS Skew Transform - Making Axonometric View - Wanimating - Web animations - HTML5, CSS3, Javascript</title>
+        <title>CSS Skew Transform - Making an Axonometric View - Wanimating - Web animations - HTML5, CSS3, Javascript</title>
         <meta name="author" content="Wanimating" />
         <meta name="description" content="Web animations - HTML5, CSS3, Javascript" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,12 +47,12 @@
     <meta name="description" content="So yeah, skewing is a bit useless in my opinion, except...." />
   </head>
 
-  <h3>CSS Skew Transform - Making Axonometric View</h3>
+  <h3>CSS Skew Transform - Making an Axonometric View</h3>
   
   <div class="entry"> 
     <p>So yeah, skewing is a bit useless in my opinion, except....</p>
 
-<p>Axonometric view, maybe you know it from those modern illustrations, or from 
+<p>The axonometric view, maybe you know it from those modern illustrations, or from 
 technical drawings, or from architectural drawings or from good ol&#39; math class 
 doodles. This type of rendering implies a 3D system of coordinates, like X,Y,Z 
 and we will do it with some simple 2D manipulations using CSS transforms. </p>
@@ -170,19 +170,19 @@ pixel by pixel until it all snaps together...so, it takes some time but you&#39;
 <p>This is the code for the 45 degrees axonometric box:</p>
 
 <div class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.right-side.deg45</span> <span class="p">{</span>
-    <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
+    <span class="py">--webkit-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
     <span class="nl">-ms-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
     <span class="nl">-o-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
     <span class="nl">transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">-45deg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="nc">.front-side.deg45</span> <span class="p">{</span>
-    <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
+    <span class="py">--webkit-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
     <span class="nl">-ms-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
     <span class="nl">-o-transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
     <span class="nl">transform</span><span class="p">:</span> <span class="n">skewY</span><span class="p">(</span><span class="n">45deg</span><span class="p">);</span>
 <span class="p">}</span>
 <span class="nc">.top-side.deg45</span> <span class="p">{</span>
-    <span class="nl">-webkit-transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>
+    <span class="py">--webkit-transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>
     <span class="nl">-ms-transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>
     <span class="nl">-o-transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>
     <span class="nl">transform</span><span class="p">:</span> <span class="n">skew</span><span class="p">(</span><span class="n">45deg</span><span class="p">,</span><span class="n">-45deg</span><span class="p">);</span>

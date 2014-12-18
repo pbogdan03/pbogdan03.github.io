@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CSS Skew Transform - Making Axonometric View
+title: CSS Skew Transform - Making an Axonometric View
 author: Bogdan
 excerpt: So yeah, skewing is a bit useless in my opinion, except....
 ---
 
 So yeah, skewing is a bit useless in my opinion, except....
 
-Axonometric view, maybe you know it from those modern illustrations, or from 
+The axonometric view, maybe you know it from those modern illustrations, or from 
 technical drawings, or from architectural drawings or from good ol' math class 
 doodles. This type of rendering implies a 3D system of coordinates, like X,Y,Z 
 and we will do it with some simple 2D manipulations using CSS transforms. 
@@ -25,19 +25,19 @@ This is the code for the 45 degrees axonometric box:
 {% highlight css %}
 
 .right-side.deg45 {
-    -webkit-transform: skewY(-45deg);
+    --webkit-transform: skewY(-45deg);
     -ms-transform: skewY(-45deg);
     -o-transform: skewY(-45deg);
     transform: skewY(-45deg);
 }
 .front-side.deg45 {
-    -webkit-transform: skewY(45deg);
+    --webkit-transform: skewY(45deg);
     -ms-transform: skewY(45deg);
     -o-transform: skewY(45deg);
     transform: skewY(45deg);
 }
 .top-side.deg45 {
-    -webkit-transform: skew(45deg,-45deg);
+    --webkit-transform: skew(45deg,-45deg);
     -ms-transform: skew(45deg,-45deg);
     -o-transform: skew(45deg,-45deg);
     transform: skew(45deg,-45deg);

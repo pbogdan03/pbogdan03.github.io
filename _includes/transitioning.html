@@ -1,0 +1,73 @@
+<style>
+.buttons-wrapper {
+  margin-bottom: 25px;
+}
+.btn {
+  position: relative;
+}
+.fa {
+  width: 70px;
+  padding: 15px;
+  font-size: 60px;
+  cursor: pointer;
+  --webkit-transition: color .5s;
+  -o-transition: color .5s;
+  transition: color .5s;
+}
+.fa-beer:hover {
+  color: orange;
+}
+.fa-bomb:hover {
+  color: red;
+}
+.fa-beer:hover + span {
+  opacity: 1;
+  --webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.fa-bomb:hover + span {
+  opacity: 1;
+  --webkit-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
+}
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  top: 17px;
+  --webkit-transform: translateX(500px);
+  -ms-transform: translateX(500px);
+  -o-transform: translateX(500px);
+  transform: translateX(500px);
+  background-color: #ddd;
+  padding: 15px;
+  font-size: 18px;
+  font-style: italic;
+  --webkit-transition: opacity .5s, transform .5s;
+  -o-transition: opacity .5s, transform .5s;
+  transition: opacity .5s, transform .5s;
+}
+.tooltip:before {
+  content: "";
+  position: absolute;
+  top: 18.5px;
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #ddd;
+}
+</style>
+
+<div class="buttons-wrapper">
+  <div class="btn">
+    <i class="fa fa-beer"></i>
+    <span class="tooltip">Take a break! Have a beer!</span>
+  </div>
+  <div class="btn">
+    <i class="fa fa-bomb"></i>
+    <span class="tooltip">BOOM!</span>
+  </div>
+</div>
