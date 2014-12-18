@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CSS Transitioning
+title: CSS Transition Property
 author: Bogdan
 excerpt: CSS3 transition property gets an element from one point to another, so if you 
 need to make something appear, change colors, dimensions etc, it's great. And simple
