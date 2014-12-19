@@ -1,0 +1,76 @@
+<style>
+  .wrapper {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    font-size: 0;
+    margin-bottom: 25px;
+  }
+  .skew {
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -backface-visibility: hidden;
+    overflow: hidden;
+    -webkit-transform: skewX(30deg);
+    -ms-transform: skewX(30deg);
+    -o-transform: skewX(30deg);
+    transform: skewX(30deg);
+    border: 2px solid #fff;
+  }
+  .skew:first-child {
+    left: -60px;
+  }
+  .skew:last-child {
+    left: 350px;
+  }
+  .img-1 {
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    left: -120px;
+    top: -100px;
+    --webkit-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+  }
+  .img-2 {
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    left: -120px;
+    top: -100px;
+    --webkit-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+    transform: skewX(-30deg);
+  }
+
+  @media only screen and (min-width: 20em) {  
+    .skew:last-child {
+      left: 50%;
+    }
+  }/* 320px */
+  @media only screen and (min-width: 50em) {
+    .skew:last-child {
+      left: 230px;
+    }
+
+  }/* 800px */
+  @media only screen and (min-width: 62.5em) {
+    .skew {width: 70%;}
+    .skew:last-child {
+      left: 350px;
+    }
+
+}/* 1000px */
+</style>
+
+<div class="wrapper">
+  <div class="skew"><img class="img-1" src="../images/download.jpg"></div>
+  <div class="skew"><img class="img-2" src="../images/photo-2.jpg"></div>
+</div>

@@ -2,10 +2,11 @@
 layout: post
 title: CSS Skew Transform - Making an Axonometric View
 author: Bogdan
-excerpt: So yeah, skewing is a bit useless in my opinion, except....
+excerpt: So yeah, skewing gives a nice dynamic to webpages and you can simulate a 3d object 
+        with it.
 ---
 
-So yeah, skewing is a bit useless in my opinion, except....
+So yeah, skewing gives a nice dynamic to webpages and you can simulate a 3d object with it.
 
 The axonometric view, maybe you know it from those modern illustrations, or from 
 technical drawings, or from architectural drawings or from good ol' math class 
