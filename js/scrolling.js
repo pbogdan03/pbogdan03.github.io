@@ -18,5 +18,5 @@ $(window).scroll(function() {
   } else if(($(window).scrollTop() + $(window).height()) < scrlTrigger) {
     counter = true;
   }
-})
+});
 

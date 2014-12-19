@@ -33,3 +33,34 @@ beatingBtn.click(function(){
 <p>Or go like this and hijack the scroll event:</p>
 
 {% include scroll-loading.html %}
+
+Here you have an animation triggered by the scroll event, when the browsers window
+bottom edge crosses the trigger div. Then it fades in the loading bar and plays the
+animation. There has to be some kind of test to not play the animation more than once
+after the window passed the trigger and to not play the animation if it is playing.
+
+This is my version of jQuery:
+
+{% highlight javascript %}
+var scrlTrigger = $('.scrl-trigger').offset().top + $('.scrl-trigger').height(),
+    filling = $('.filling'),
+    scrlWrapper = $('.scrl-wrapper'),
+    counter = true,
+    playing = false;
+
+$(window).scroll(function() {
+  if((($(window).scrollTop() + $(window).height()) > scrlTrigger) && counter && !playing) {
+    playing = true;
+    filling.toggleClass('fill-anim');
+    scrlWrapper.toggleClass('hidden');
+    setTimeout(function () {
+      scrlWrapper.toggleClass('hidden');
+      filling.toggleClass('fill-anim');
+      playing = false; 
+    }, 2500);
+    counter = false;
+  } else if(($(window).scrollTop() + $(window).height()) < scrlTrigger) {
+    counter = true;
+  }
+});
+{% endhighlight %}
