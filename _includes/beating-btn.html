@@ -1,0 +1,114 @@
+<style>
+  @-webkit-keyframes beatit {
+    18% {--webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);}
+    25% {--webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);}
+    32% {--webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);}
+    39% {--webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);}
+    46% {--webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);}
+  }
+  @keyframes beatit {
+    18% {--webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);}
+    25% {--webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);}
+    32% {--webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);}
+    39% {--webkit-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -o-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);}
+    46% {--webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);}
+  }
+  @keyframes beatit-color {
+    25% {background-color: #E73434;}
+    32% {background-color: #DB2213;}
+    39% {background-color: #E73434;}
+    46% {background-color: #DB2213;}
+  }
+  @-webkit-keyframes beatit-color {
+    25% {background-color: #E73434;}
+    32% {background-color: #DB2213;}
+    39% {background-color: #E73434;}
+    46% {background-color: #DB2213;}
+  }
+  .beating-btn-wrapper {
+    width: 100%;
+    height: 200px;
+  }
+  #beating-btn {
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #DB2213;
+    border-bottom: solid 4px #B01A11;
+    border-radius: 10px;
+  }
+  #beating-btn:hover {
+    background-color: #E73434;
+    border-bottom: solid 4px #DB2213;
+  }
+  #beating-btn:hover .fa {
+    color: #fff;
+  }
+  #beating-btn:active {
+    background-color: #B01A11;
+    border: none;
+  }
+  .fa-heart,.fa-times {
+    position: absolute;
+    font-size: 70px;
+    color: #eee;
+    top: 40px;
+    left: 40px;
+  }
+  .fa-times {
+    left: 47px;
+  }
+  .beating-heart {
+    -webkit-animation: beatit 2s infinite;
+    -o-animation: beatit 2s infinite;
+    animation: beatit 2s infinite;
+  }
+  .beating-heart-color {
+    -webkit-animation: beatit-color 2s infinite;
+    -o-animation: beatit-color 2s infinite;
+    animation: beatit-color 2s infinite;
+  }
+  .hidden {
+    opacity: 0;
+  }
+</style>
+
+
+<div class="beating-btn-wrapper">
+  <div id="beating-btn">
+    <i class="fa fa-heart hidden"></i>
+    <i class="fa fa-times"></i>
+  </div>
+</div>

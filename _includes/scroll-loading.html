@@ -1,0 +1,65 @@
+<style>
+  @keyframes fillit {
+    100% {width: 100%;}
+  }
+  @-webkit-keyframes fillit {
+    0% {width: 0%}
+    100% {width: 100%;}
+  }
+  .scrl-wrapper {
+    position: fixed;
+    background-color: #22B8EA;
+    width: 300px;
+    height: 60px;  
+    top: 10px;
+    left: 40%;
+    border-radius: 6px;
+    overflow: hidden;
+    -webkit-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+  }
+  .scrl-text {
+    position: absolute;
+    line-height: 60px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    font-size: 21px;
+    text-align: center;
+    z-index: 55;
+  }
+  .filling {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #1080A5;
+  }
+  .scrl-trigger {
+    height: 50px;
+    width: 100%;
+    background-color: #22B8EA;
+    text-align: center;
+    border-radius: 6px;
+  }
+  .scrl-trigger span {
+    font-size: 21px;
+    color: #fff;
+    line-height: 50px;
+  }
+  .fill-anim {
+    -webkit-animation: fillit 2s .5s;
+    -o-animation: fillit 2s .5s;
+    animation: fillit 2s .5s;
+    -webkit-animation-fill-mode: backwards;
+    -o-animation-fill-mode: backwards;
+    animation-fill-mode: backwards;
+  }
+</style>
+
+<div class="scrl-wrapper hidden">
+  <span class="scrl-text">Scrolling...</span>
+  <span class="filling"></span>
+</div>
+<div class="scrl-trigger"><span>This is the trigger</span></div>
