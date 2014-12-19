@@ -5,7 +5,10 @@ author: Bogdan
 custom_js: 
 - beatingBtn
 - scrolling
-excerpt: 
+excerpt: Next, I will show you how to make your animations even more eye-catching with 
+        the power of the almighty Javascript. With JS you can control user actions, and the best
+        ones to control are the mouse events. Fire up animations when the user clicks, scrolls
+        or when he least expects them for a nice effect.
 ---
 
 Next, I will show you how to make your animations even more eye-catching with 
