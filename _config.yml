@@ -27,8 +27,8 @@ sass:
   style: :expanded # or compressed for minified
 
 # Plugins
-# gems: 
-#   - jekyll-sitemap 
+gems: 
+  - jekyll-sitemap 
 
 # Exclude these files from production
 exclude: 
